@@ -58,7 +58,7 @@ type Config struct {
 }
 ```
 use function `func MarshalD(i interface{}) ([]Directive, error)` to serialize struct into Directive
-# Example
+# Example for build
 ```go
 package main
 import (
@@ -67,10 +67,10 @@ import (
 )
 func main() {
     prefix := "/usr/local/nginx"
-	logpath := "logs"
-	libPath := "/usr/local/nginx/lib"
-	conf := ncserial.NewDefaultRestyConfig(prefix, logpath, libPath)
-	emptyBlk := ncserial.NewEmptyBlock()
+    logpath := "logs"
+    libPath := "/usr/local/nginx/lib"
+    conf := ncserial.NewDefaultRestyConfig(prefix, logpath, libPath)
+    emptyBlk := ncserial.NewEmptyBlock()
     emptyBlk.AddInterface(conf)
     fmt.Println(emptyBlk)
 }

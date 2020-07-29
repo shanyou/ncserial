@@ -57,6 +57,7 @@ type Config struct {
 	Extras          Options
 }
 ```
+use function `func MarshalD(i interface{}) ([]Directive, error)` to serialize struct into Directive
 # Example
 ```go
 package main

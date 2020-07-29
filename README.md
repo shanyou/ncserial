@@ -2,7 +2,7 @@ ncserial
 ===
 nginx config parser and builder for the Go language
 
-# Instruction
+## Instruction
 `ncserial` use interface `Directive` and `BlockDirective` to represent nginx config directive.
 ```go
 // Directive nginx config directive
@@ -58,7 +58,7 @@ type Config struct {
 }
 ```
 use function `func MarshalD(i interface{}) ([]Directive, error)` to serialize struct into Directive
-# Example for build
+## Example for build
 ```go
 package main
 import (

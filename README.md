@@ -1,6 +1,6 @@
 ncserial
 ===
-nginx config parser for the Go language
+nginx config parser and builder for the Go language
 
 # Instruction
 `ncserial` use interface `Directive` and `BlockDirective` to represent nginx config directive.
